@@ -1,5 +1,4 @@
 import { Heading } from '@chakra-ui/react';
-import './App.css';
 import { Layout } from './components/Layout';
 import { PackagesTable } from './components/Table/PackagesTable';
 
