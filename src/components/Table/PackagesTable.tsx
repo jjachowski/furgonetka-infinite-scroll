@@ -42,6 +42,7 @@ export const PackagesTable: React.FC<TableProps> = ({}) => {
   );
 
   return (
+    // for the sake of demo app I won't use css modules and use inline styles instead
     <div style={{ height: '100vh', width: '800px', overflow: 'scroll' }}>
       <table style={{ width: '100%' }}>
         <thead>
