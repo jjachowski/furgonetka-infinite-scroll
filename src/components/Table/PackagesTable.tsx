@@ -13,7 +13,7 @@ export const PackagesTable: React.FC<TableProps> = ({}) => {
   });
 
   useEffect(() => {
-    const test = async () => {
+    const fetchPackages = async () => {
       const res = await getPackages(pagination);
 
       if (res?.status === 200) {
@@ -23,7 +23,8 @@ export const PackagesTable: React.FC<TableProps> = ({}) => {
         }
       }
     };
-    test();
+
+    fetchPackages();
   }, [pagination]);
 
   const observer = useRef<IntersectionObserver>();
